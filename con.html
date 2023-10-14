@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>축하공연 팀 소개</title>
+    <title>SWBS 공개방송</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
         body {
@@ -19,7 +19,8 @@
         }
 
         header a {
-            display: block; /* 이미지 전체를 클릭 가능한 링크로 만들기 위해 필요합니다. */
+            display: block;
+            width: 100%; /* 이미지 전체를 링크 영역으로 만듭니다. */
         }
 
         header img {
@@ -27,7 +28,7 @@
             height: auto;
             display: block;
             margin: 0;
-            cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능한 것처럼 보이도록 설정 */
+            cursor: pointer; /* 마우스 커서를 포인터로 변경하여 클릭 가능한 것처럼 보이도록 설정 */
         }
 
         nav {
@@ -54,29 +55,17 @@
         }
 
         main {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             padding: 20px;
             text-align: center;
             margin-top: 50px;
         }
 
         main section {
-            flex: 1;
-            padding: 20px;
-            max-width: 400px; /* 간격 조정 */
-            text-align: center;
+            padding: 20px 0;
         }
 
         h2 {
             color: #303030;
-        }
-
-        section {
-            flex: 1; /* 중앙 정렬 */
-            padding: 20px;
-            text-align: center;
         }
 
         footer {
@@ -90,40 +79,26 @@
 <body>
     <header>
         <a href="index.html">
-            <img src="pic_1.png" alt="축하공연 팀 소개">
+            <img src="pic_1.png" alt="SWBS 공개방송">
         </a>
-        
         <nav>
             <ul>
                 <li><a href="index.html">홈</a></li>
                 <li><a href="program.html">프로그램</a></li>
                 <li><a href="con.html">축하 공연 및 게스트</a></li>
                 <li><a href="sc.html">행사 순서</a></li>
-                <li><a href="swbs.html">SWBS 소개</a></li> 
-                
+                <li><a href="swbs.html">SWBS 소개</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <section>
-            <h2>SWURS</h2> 
-            <img src="swurs.png" alt="SWURS" width="350">
-            <p>서울여자대학교 응원단 SWURS</p>
-        </section>
-        
-        <section>
-            <h2>소리마당</h2>
-            <img src="sori.png" alt="소리마당" width="350">
-            <p>서울여자대학교 중앙노래패 소리마당</p>
+            <h2>스케줄표</h2>
+            <img src="sc.jpg" alt="공개방송 스케줄" width="500">
         </section>
     </main>
-    
-    <section>
-        <h2>특별 강연 게스트</h2>
-        <p>공개 예정</p>
-    </section>
-    
+
     <footer>
         <p>&copy; 2023 SWBS 공개방송</p>
     </footer>
