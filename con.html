@@ -63,6 +63,7 @@
             text-align: center;
             color: #100056;
             display: flex;
+            flex-wrap: wrap; /* 줄 바꿈 처리 */
             justify-content: space-between;
             align-items: center;
             padding: 20px;
@@ -92,6 +93,14 @@
             color: #ffffff;
             text-align: center;
             padding: 10px;
+        }
+
+        /* 미디어 쿼리 추가 */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
@@ -129,6 +138,7 @@
     <section>
         <h2>특별 강연 게스트</h2>
         <p>공개 예정</p>
+       
     </section>
     
     <footer>
@@ -139,7 +149,4 @@
         </a>
     </footer>
 </body>
-</body>
 </html>
-
-<p>장소 : <a href="https://naver.me/GPrzzz1R" target="_blank">서울여자대학교 인문사회관 3층 인사랑당</a></p>
