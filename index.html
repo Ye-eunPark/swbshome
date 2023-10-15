@@ -61,7 +61,14 @@
         }
 
         main section {
-            margin-bottom: 50px;
+            padding: 20px;
+           
+        }
+
+        .section-box {
+            border: 2px solid #000; /* 네모 박스 경계선 스타일 지정 */
+            padding: 20px; /* 네모 박스 내부 여백 추가 */
+            margin: 20px; /* 네모 박스 간격 설정 */
         }
 
         h1 {
@@ -73,11 +80,23 @@
             color: #303030;
         }
 
+        h3 {
+            color:  #983030;
+            font-size: 36px;
+        }
+       
+
         .event-box {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+
+     
+        .banner {
+            margin-top: 20px; /* 현수막과 메뉴바 간의 여백 추가 */
         }
 
         footer {
@@ -123,17 +142,29 @@
     </header>
 
     <main>
-        <section>
-            <h1>제 10회 SWBS 공개방송</h1>
-            <h2>행사일정</h2>
+
+        <section class = "section-box">
+        
+
+            <h3>제 10회 SWBS 공개방송</h3>
+            <img src="benner.png" alt="현수막 (아무거나 넣음)" width="500">
+            <p>현수막 사진</p>
+        </section>
+
+
+        <section class ="section-box"> 
+            
+                <h1>행사일정</h1>
+            
             <div class="event-box">
                 <p>일시 : 2023.11.20 18:30</p>
-                <p>장소 : 서울여자대학교 인문사회관 3층 인사랑당</p>
+                <p>장소 : <a href = "https://naver.me/GPrzzz1R" target = "_blank">서울여자대학교 인문사회관 3층 인사랑당</a></p>
                 <p>관람비 : 무료</p>
             </div>
         </section>
 
-        <section>
+
+        <section >
             <img src="mc.png" alt="진행" width="500">
         </section>
     </main>
