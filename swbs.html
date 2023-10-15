@@ -57,12 +57,17 @@
             text-align: center;
             color: #0f1456;
             padding: 20px;
-            text-align: center;
             margin-top: 50px;
         }
 
-        main section {
-            padding: 20px 0;
+        .section-box {
+            border: 2px solid #000; /* 네모 박스 경계선 스타일 지정 */
+            padding: 20px; /* 네모 박스 내부 여백 추가 */
+            margin: 20px; /* 네모 박스 간격 설정 */
+        }
+
+        h1 {
+            color: #983030;
         }
 
         h2 {
@@ -81,7 +86,7 @@
     <header>
         <a href="index.html">
             <img src="pic_1.png" alt="국원소개">
-            </a>
+        </a>
         <nav>
             <ul>
                 <li><a href="index.html">홈</a></li>
@@ -94,21 +99,29 @@
     </header>
     
     <main>
-        <section>
+        <section class="section-box">
+            <h1>SWBS</h1>
+            <img src="swbs logo.jpeg" alt="SWBS 로고" width="500">
+            <p>여기는 진리의 소리, 젊음의 소리 서울여자대학교 교육방송국입니다.</p>
+        </section>
+
+      
+        
+        <section class="section-box">
+            <h1 >멤버 소개</h1>
             <h2>국장</h2>
             <img src="IMG_1778.JPG" alt="SWBS 국장" width="500">
             <p>조윤재</p>
         </section>
         
-        <section>
-            <h2>SWBS 국원</h2>
+        <section class="section-box">
+            <h1>SWBS 국원</h1>
             <img src="swbs5253.jpeg" alt="국원 소개" width="500">
-            <p>52기</p>
+            <h2>52기</h2>
             <p>조윤재 조연주 김주희 이다인 </p>
             <p>이지민 안형연 박예은 정수연</p>
-            <p></p>
             <p> </p>
-            <p>53기</p>
+            <h2>53기</h2>
             <p>백효원 이하은 곽세진 박지우 최지미</p>
         </section>
     </main>
@@ -120,6 +133,5 @@
             <img src="instar.png" alt="Instagram" width="30">
         </a>
     </footer>
-</body>
 </body>
 </html>
