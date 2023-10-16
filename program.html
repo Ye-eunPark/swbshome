@@ -9,17 +9,8 @@
             background-color: #d0e5ff;
             margin: 0;
             padding: 0;
-            
         }
-
-        video#bgVideo {
-            position: fixed;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -1;
-        }
+        
 
         header {
             background-color: #75959a;
@@ -45,7 +36,7 @@
             background-color: rgb(48, 51, 100);
             text-align: center;
             position: absolute;
-            top: 95%;
+            top: 100%;
             width: 100%;
             padding: 15px 0;
         }
@@ -68,14 +59,16 @@
         }
 
         main {
+            background: url("bg_1_3.gif") no-repeat center center fixed;
+            background-size: cover;
             text-align: center;
             color: #0d0659;
             padding: 20px;
             text-align: center;
             margin-top: 50px;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-wrap: wrap; /* Flexbox를 사용하여 요소들을 줄바꿈합니다. */
+            justify-content: center; /* 내용을 중앙 정렬합니다. */
         }
 
         main section {
@@ -83,7 +76,7 @@
             border: 2px solid #000;
             border-radius: 10px;
             margin: 10px;
-            max-width: 500px;
+            max-width: 500px; /* 최대 너비를 설정하여 큰 화면에서도 레이아웃을 제어합니다. */
         }
 
         .section-box {
@@ -91,7 +84,7 @@
             padding: 20px;
             margin: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-shadow:0 0 10px  rgba(0, 0, 0, 0.3);
         }
 
         h2 {
@@ -108,24 +101,15 @@
         /* 반응형 스타일 */
         @media (max-width: 768px) {
             main section {
-                max-width: 100%;
+                max-width: 100%; /* 작은 화면에서 너비를 100%로 설정하여 모바일 환경에 적합하게 만듭니다. */
             }
         }
     </style>
 </head>
 <body>
-    <!-- 비디오를 추가하고 필요한 속성 설정 -->
-    <video autoplay loop muted id="bgVideo">
-        <source src="bebe.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
     <header>
         <a href="index.html">
-            <video autoplay muted loop width="100%" height="auto">
-                <source src="banner_1_6.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <img src="banner_1_8_2.gif" alt="SWBS 공개방송 로고">
         </a>
         <nav>
             <ul>
@@ -140,19 +124,19 @@
     </header>
     
     <main>
-        <section class="section-box">
+        <section class = "section-box">
             <h2>썰스데이</h2>
             <img src="day.jpeg" alt="썰스데이" width="500">
             <p>학우들의 재미있는 사연을 들려주는 썰스데이</p>
         </section>
         
-        <section class="section-box">
+        <section class = "section-box">
             <h2>이거 OTT때</h2>
             <img src="ott.jpeg" alt="이거 OTT때" width="500">
             <p>다양한 OTT 콘텐츠를 소개하는 이거 OTT때</p>
         </section>
 
-        <section class="section-box">
+        <section class = "section-box">
             <h2>정규방송 프로그램 동영상</h2>
             <div style="overflow: auto;">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/K23v8ESr3BU" frameborder="0" allowfullscreen></iframe>
