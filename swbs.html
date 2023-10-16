@@ -35,7 +35,7 @@
             background-color: rgb(48, 51, 100);
             text-align: center;
             position: absolute;
-            top: 95%;
+            top: 100%;
             width: 100%;
             padding: 15px 0;
         }
@@ -58,13 +58,15 @@
         }
 
         main {
+            background: url("bg_1_3.gif") no-repeat center center fixed;
+            background-size: cover;
             text-align: center;
             color: #0f1456;
             padding: 20px;
-            margin-top: 50px;
+            margin-top: 50px; /* 수정: 메인 요소와 메뉴바 사이의 간격을 조정 */
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: center; /* 추가: 섹션 내용을 가운데 정렬 */
         }
 
         .section-box {
@@ -79,7 +81,7 @@
 
         h1 {
             color: #000569;
-            font-size: 36px;
+            font-size :36px;
         }
 
         h2 {
@@ -93,16 +95,6 @@
             padding: 10px;
         }
 
-        /* 비디오를 배경으로 설정 */
-        video#bgVideo {
-            position: fixed;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -1;
-        }
-
         /* 반응형 스타일 */
         @media (max-width: 768px) {
             .section-box {
@@ -112,18 +104,9 @@
     </style>
 </head>
 <body>
-    <!-- 비디오를 추가하고 필요한 속성 설정 -->
-    <video autoplay loop muted id="bgVideo">
-        <source src="bebe.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
     <header>
         <a href="index.html">
-            <video autoplay muted loop width="100%" height="auto">
-                <source src="banner_1_6.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <img src="banner_1_8_2.gif" alt="SWBS 공개방송 로고">
         </a>
         <nav>
             <ul>
