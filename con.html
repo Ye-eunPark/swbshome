@@ -58,7 +58,7 @@
         }
 
         main {
-            background: url("bebe.png") no-repeat center center fixed; /* 배경 이미지 추가 */
+            background: url("bg.png") no-repeat center center fixed; /* 배경 이미지 추가 */
             background-size: cover;
             text-align: center;
             color: #100056;
@@ -101,6 +101,15 @@
                 flex-direction: column;
                 align-items: center;
             }
+
+            header img {
+                height: auto;
+            }
+        }
+
+        /* 배너 숨기기 */
+        .banner {
+            display: none;
         }
     </style>
 </head>
@@ -116,6 +125,7 @@
                 <li><a href="program.html">프로그램</a></li>
                 <li><a href="con.html">축하 공연 및 게스트</a></li>
                 <li><a href="sc.html">행사 순서</a></li>
+                <li><a href="ac.html">협찬</a></li>
                 <li><a href="swbs.html">SWBS 소개</a></li> 
             </ul>
         </nav>
@@ -133,13 +143,15 @@
             <img src="sori.png" alt="소리마당" width="350">
             <p>서울여자대학교 중앙노래패 소리마당</p>
         </section>
+
+        <section class="banner">
+            <h2>특별 강연 게스트</h2>
+            <p>공개 예정</p>
+        </section>
+        
     </main>
     
-    <section>
-        <h2>특별 강연 게스트</h2>
-        <p>공개 예정</p>
-       
-    </section>
+  
     
     <footer>
         <p>&copy; 2023 SWBS 공개방송</p>
