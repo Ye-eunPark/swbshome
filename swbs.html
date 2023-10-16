@@ -58,15 +58,15 @@
         }
 
         main {
-            background: url("bebe.png") no-repeat center center fixed;
+            background: url("bg.png") no-repeat center center fixed;
             background-size: cover;
             text-align: center;
             color: #0f1456;
             padding: 20px;
-            margin-top: 50px;
+            margin-top: 50px; /* 수정: 메인 요소와 메뉴바 사이의 간격을 조정 */
             display: flex;
-            flex-direction: column; /* 변경: 내용을 세로로 배치하도록 설정 */
-            align-items: center; /* 변경: 섹션 내용을 가운데 정렬 */
+            flex-direction: column;
+            align-items: center; /* 추가: 섹션 내용을 가운데 정렬 */
         }
 
         .section-box {
@@ -75,12 +75,13 @@
             margin: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            width: 100%; /* 변경: 섹션의 너비를 100%로 설정하여 가로 전체 너비 차지 */
-            max-width: 800px; /* 변경: 섹션의 최대 너비 설정 */
+            width: 100%;
+            max-width: 800px;
         }
 
         h1 {
-            color: #983030;
+            color: #000569;
+            font-size :36px;
         }
 
         h2 {
@@ -113,26 +114,26 @@
                 <li><a href="program.html">프로그램</a></li>
                 <li><a href="con.html">축하 공연 및 게스트</a></li>
                 <li><a href="sc.html">행사 순서</a></li>
+                <li><a href="ac.html">협찬</a></li>
                 <li><a href="swbs.html">SWBS 소개</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <section class="section-box">
+        <section>
             <h1>SWBS</h1>
-            <img src="swbs logo.jpeg" alt="SWBS 로고" width="500">
             <p>여기는 진리의 소리, 젊음의 소리 서울여자대학교 교육방송국입니다.</p>
         </section>
       
-        <section class>
+        <section>
             <h1>멤버 소개</h1>
             <h2>국장</h2>
             <img src="IMG_1778.JPG" alt="SWBS 국장" width="500">
             <p>조윤재</p>
         </section>
         
-        <section class>
+        <section>
             <h1>SWBS 국원</h1>
             <img src="swbs5253.jpeg" alt="국원 소개" width="500">
             <h2>52기</h2>
@@ -142,11 +143,7 @@
             <h2>53기</h2>
             <p>백효원 이하은 곽세진 박지우 최지미</p>
         </section>
-
-       
-
     </main>
-
     
     <footer>
         <p>&copy; 2023 SWBS 공개방송</p>
