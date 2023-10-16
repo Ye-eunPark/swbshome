@@ -52,16 +52,22 @@
         }
 
         main {
-            background: url("bg_1_3.gif") no-repeat center center fixed;
-            background-size: cover;
-            text-align: center;
-            color: #0f1456;
-            padding: 20px;
-            margin-top: 50px;
-            display: flex;
-            flex-direction: column; /* 섹션들을 세로로 배치 */
-            align-items: center;
+         background: url("bg_1_3.gif") no-repeat center center fixed;
+        text-align: center;
+        color: #0f1456;
+        padding: 20px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column; /* 섹션들을 세로로 배치 */
+        align-items: center;
         }
+
+    @media (max-width: 768px) {
+     main {
+        background-attachment: scroll; /* 배경 이미지가 스크롤되도록 설정 */
+        background-size: auto; /* 배경 이미지 크기를 자동으로 설정 */
+    }
+}
 
         main section {
             width: 100%; /* 섹션의 너비를 100%로 설정하여 가로 전체 너비 차지 */
