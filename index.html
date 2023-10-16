@@ -25,7 +25,7 @@
         }
 
         nav {
-            background-color: rgb(83, 87, 169);
+            background-color: rgb(48, 51, 100);
             text-align: center;
             position: absolute;
             top: 100%;
@@ -51,31 +51,29 @@
         }
 
         main {
-            background: url("bebe.png") no-repeat center center fixed;
+            background: url("bg.png") no-repeat center center fixed;
             background-size: cover;
             text-align: center;
             color: #0f1456;
             padding: 20px;
             margin-top: 50px;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column; /* 섹션들을 세로로 배치 */
+            align-items: center;
         }
 
         main section {
-            padding: 20px;
+            width: 100%; /* 섹션의 너비를 100%로 설정하여 가로 전체 너비 차지 */
+            max-width: 800px; /* 섹션의 최대 너비 설정 */
+            margin: 20px 0; /* 섹션들 간의 상단과 하단 간격 설정 */
         }
 
         .section-box {
             border: 2px solid #000;
             padding: 20px;
-            margin: 20px;
             border-radius: 10px;
-            box-shadow:0 0 10px  rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
-
-    
-
 
         h1 {
             color: #18005e;
@@ -87,7 +85,7 @@
         }
 
         h3 {
-            color: #983030;
+            color: #000569;
             font-size: 36px;
         }
 
@@ -142,29 +140,30 @@
                 <li><a href="program.html">프로그램</a></li>
                 <li><a href="con.html">축하 공연 및 게스트</a></li>
                 <li><a href="sc.html">행사 순서</a></li>
+                <li><a href="ac.html">협찬</a></li>
                 <li><a href="swbs.html">SWBS 소개</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="section-box">
+        <section>
             <h3>제 10회 SWBS 공개방송</h3>
-            <img src="benner.png" alt="현수막 (아무거나 넣음)" width="500">
+            <img src="po.jpeg" alt="" width="500">
             <p>포스터 사진(아무거나 넣음)</p>
         </section>
 
-        <section class="section-box">
+        <section>
             <h1>행사일정</h1>
-            <div class="event-box">
+        
                 <p>일시 : 2023.11.20 18:30</p>
                 <p>장소 : <a href="https://naver.me/GPrzzz1R" target="_blank">서울여자대학교 인문사회관 3층 인사랑당</a></p>
                 <p>관람비 : 무료</p>
-            </div>
+            
         </section>
 
         <section>
-            <img src="mc.png" alt="진행" width="500">
+            <img src="mc2.png" alt="진행" width="500">
         </section>
     </main>
 
