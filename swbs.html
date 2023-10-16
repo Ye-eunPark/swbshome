@@ -65,8 +65,8 @@
             padding: 20px;
             margin-top: 50px;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column; /* 변경: 내용을 세로로 배치하도록 설정 */
+            align-items: center; /* 변경: 섹션 내용을 가운데 정렬 */
         }
 
         .section-box {
@@ -74,7 +74,9 @@
             padding: 20px;
             margin: 20px;
             border-radius: 10px;
-            box-shadow:0 0 10px  rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 100%; /* 변경: 섹션의 너비를 100%로 설정하여 가로 전체 너비 차지 */
+            max-width: 800px; /* 변경: 섹션의 최대 너비 설정 */
         }
 
         h1 {
@@ -95,7 +97,7 @@
         /* 반응형 스타일 */
         @media (max-width: 768px) {
             .section-box {
-                max-width: 100%; /* 작은 화면에서 너비를 100%로 설정하여 모바일 환경에 적합하게 만듭니다. */
+                max-width: 100%;
             }
         }
     </style>
@@ -123,14 +125,14 @@
             <p>여기는 진리의 소리, 젊음의 소리 서울여자대학교 교육방송국입니다.</p>
         </section>
       
-        <section class="section-box">
+        <section class>
             <h1>멤버 소개</h1>
             <h2>국장</h2>
             <img src="IMG_1778.JPG" alt="SWBS 국장" width="500">
             <p>조윤재</p>
         </section>
         
-        <section class="section-box">
+        <section class>
             <h1>SWBS 국원</h1>
             <img src="swbs5253.jpeg" alt="국원 소개" width="500">
             <h2>52기</h2>
@@ -140,7 +142,11 @@
             <h2>53기</h2>
             <p>백효원 이하은 곽세진 박지우 최지미</p>
         </section>
+
+       
+
     </main>
+
     
     <footer>
         <p>&copy; 2023 SWBS 공개방송</p>
