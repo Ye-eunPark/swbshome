@@ -9,15 +9,12 @@
         body {
             margin: 0;
             padding: 0;
-            
         }
 
         header {
-            
             background-color: #75959a;
             text-align: center;
             position: relative;
-            
         }
 
         header img {
@@ -65,27 +62,23 @@
         }
 
         main {
-            background: url("bebe.mp4") no-repeat center center fixed;
+            background: url("bg.png") no-repeat center center fixed;
             background-size: cover;
             text-align: center;
-            color: #0f1456;
-            padding: 20px;
-            margin-top: 50px;
+            color: #100056;
             display: flex;
             flex-direction: column; /* 섹션들을 세로로 배치 */
             align-items: center;
-            position: relative;
-            z-index: 1;
+            justify-content: center; /* 콘텐츠를 수직 및 수평 중앙으로 정렬 */
+            min-height: 100vh; /* 최소 높이를 화면 높이로 설정하여 화면 전체 차지 */
+            padding: 20px;
         }
 
         main section {
-            width: 100%; /* 섹션의 너비를 100%로 설정하여 가로 전체 너비 차지 */
-            max-width: 800px; /* 섹션의 최대 너비 설정 */
-            margin: 20px 0; /* 섹션들 간의 상단과 하단 간격 설정 */
-        }
-
-        .section-box {
-            border: 2px solid #000;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+            
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -146,11 +139,6 @@
     </style>
 </head>
 <body>
-    <video autoplay muted loop id="bgVideo">
-        <source src="bebe.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
     <header>
         <a href="index.html">
             <video autoplay muted loop width="100%" height="auto">
@@ -179,11 +167,9 @@
 
         <section>
             <h1>행사일정</h1>
-        
                 <p>일시 : 2023.11.20 18:30</p>
                 <p>장소 : <a href="https://naver.me/GPrzzz1R" target="_blank">서울여자대학교 인문사회관 3층 인사랑당</a></p>
                 <p>관람비 : 무료</p>
-            
         </section>
 
         <section>
