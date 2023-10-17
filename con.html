@@ -58,14 +58,10 @@
         }
 
         main {
-            background: url("bgf.gif") no-repeat center center fixed; /* 배경 이미지 추가 */
+            background: url("bgf.gif") no-repeat center center fixed;
             background-size: cover;
             text-align: center;
-            color: #100056;
-            display: flex;
-            flex-wrap: wrap; /* 줄 바꿈 처리 */
-            justify-content: space-between;
-            align-items: center;
+            color: #fff;
             padding: 20px;
             text-align: center;
             margin-top: 50px;
@@ -74,8 +70,11 @@
         main section {
             flex: 1;
             padding: 20px;
-            max-width: 400px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* 이 부분이 수정되었습니다. */
         }
 
         h2 {
@@ -107,10 +106,11 @@
             }
         }
 
-        /* 배너 숨기기 */
-        .banner {
+        /* Remove this, as it's hiding your banner */
+        /* .banner {
             display: none;
         }
+        */
     </style>
 </head>
 <body>
@@ -126,32 +126,23 @@
                 <li><a href="con.html">축하 공연 및 게스트</a></li>
                 <li><a href="sc.html">행사 순서</a></li>
                 <li><a href="ac.html">협찬</a></li>
-                <li><a href="swbs.html">SWBS 소개</a></li> 
+                <li><a href="swbs.html">SWBS 소개</a> 
             </ul>
         </nav>
     </header>
     
     <main>
         <section>
-            <h2>SWURS</h2> 
-            <img src="swurs.png" alt="SWURS" width="350">
-            <p>서울여자대학교 응원단 SWURS</p>
-        </section>
-        
-        <section>
-            <h2>소리마당</h2>
-            <img src="sori.png" alt="소리마당" width="350">
-            <p>서울여자대학교 중앙노래패 소리마당</p>
+            <h2>특별 강연 게스트</h2>
+            <img src="KakaoTalk_Photo_2023-10-17-15-30-32 005.jpeg" width="500">
         </section>
 
-        <section class="banner">
-            <h2>특별 강연 게스트</h2>
-            <p>공개 예정</p>
+        <section>
+            <h2>동아리 라인업</h2>
+            <img src="KakaoTalk_Photo_2023-10-17-15-30-32 001.jpeg" alt="SWURS" width="500">
         </section>
         
     </main>
-    
-  
     
     <footer>
         <p>&copy; 2023 SWBS 공개방송</p>
