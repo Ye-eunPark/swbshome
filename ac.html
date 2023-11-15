@@ -98,12 +98,16 @@
             h3 {
                 font-size: 24px;
             }
-            main section img {
-                max-width: 100%;
-                height: auto;
-                 margin-bottom: 10px;}
 
-        }
+            
+            main section img {
+                max-width: 100%; /* 최대 너비를 컨테이너의 100%로 설정 */
+                height: auto;    /* 종횡비를 유지합니다. */
+                display: block;  /* 이미지 주변의 기본 여백을 제거합니다. */
+                margin: 0 auto;  /* 이미지를 컨테이너 내에서 수평으로 가운데 정렬합니다. */
+                margin-bottom: 10px; /* 이미지 사이에 여백을 추가합니다. */
+            }
+
     </style>
 </head>
 <body>
